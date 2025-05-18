@@ -1,0 +1,233 @@
+/* General */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to bottom, #3b0d73, #1d004b);
+  color: #f8f9fa;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #12003b;
+  padding: 10px 20px;
+  color: white;
+  flex-wrap: wrap;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.logo img {
+  height: 30px; /* Ajustado a un tamaño intermedio */
+  margin-right: 10px;
+}
+
+.nav-buttons {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+/* Botones */
+.btn-categorias,
+.btn-secundario {
+  background-color: #5c3df4;
+  color: white;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.btn-categorias:hover,
+.btn-secundario:hover {
+  background-color: #4020d8;
+}
+
+/* Dropdown */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 0px 2px 8px rgba(0,0,0,0.2);
+  z-index: 1;
+  top: 38px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.dropdown-content a {
+  color: #333;
+  padding: 10px 16px;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #eee;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Main */
+.main {
+  padding: 40px 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 36px;
+  color: #ffffff;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+  text-align: center;
+  color: #ffffff;
+}
+
+/* Card del juego */
+.card-juego {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 25px;
+  margin-top: 20px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 12px rgba(0,0,0,0.2);
+  text-align: center;
+  color: #1c1c1c;
+}
+
+.card-juego img {
+  max-width: 160px;
+}
+
+/* Títulos de juegos en morado */
+.card-juego h2 {
+  color: #7a36ff; /* morado */
+  margin-top: 15px;
+}
+
+.card-juego p {
+  margin: 10px 0;
+  color: #444;
+}
+
+/* Botón principal */
+.btn-jugar {
+  background-color: #7a36ff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  display: inline-block;
+  margin-top: 15px;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.btn-jugar:hover {
+  background-color: #561bd8;
+}
+
+/* Sección de descripción */
+.descripcion {
+  margin-top: 60px;
+  background: rgba(255, 255, 255, 0.95);
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  color: #333;
+}
+
+/* Footer */
+.footer {
+  background-color: #12003b;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 40px;
+}
+
+/* Imagen ampliada */
+.img-relativa {
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+/* ----------- Responsive para pantallas pequeñas ----------- */
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-buttons {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  h2 {
+    font-size: 22px;
+  }
+
+  .card-juego img {
+    max-width: 120px;
+  }
+
+  .btn-jugar {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  .descripcion {
+    padding: 20px 10px;
+    font-size: 15px;
+  }
+
+  .logo img {
+    height: 24px;
+  }
+
+  .logo span {
+    font-size: 18px;
+  }
+}
